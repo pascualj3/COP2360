@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Octopus o = new Octopus("Jack");
+
+        Console.WriteLine("Name: " + o.Name);
+        Console.WriteLine("Legs: " + o.Legs);
+    }
+}
+
+class Octopus
+{
+    public readonly string Name;
+    public readonly int Legs = 8;
+
+    public Octopus(string name)
+    {
+        Name = name;
+    }
+}
